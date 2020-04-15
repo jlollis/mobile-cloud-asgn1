@@ -19,6 +19,7 @@ apply plugin: 'war'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
+mainClassName = 'org.magnum.dataup.model.Application'
 
 war {
     baseName = 'gs-convert-jar-to-war'
@@ -65,6 +66,6 @@ dependencies {
     testCompile("junit:junit")
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '5.0'
-}
+//task wrapper(type: Wrapper) {
+//    gradleVersion = '5.0'
+//}
